@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(43,40,37, 0.836);
+}
+
+
+/*Navegación*/
+.navbar{
+    background-color: rgba(43,40,37, 0.836);
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+}
+
+.navContainer{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.LogoHBT{
+    
+    overflow: hidden;
+    height: 60px;
+    width: 60px;
+}
+.LogoHBT img{
+    width: 100%;
+    height: 100%;
+}
+
+.containerLinksNav{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerLinksNav a{
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 0;
+    color: #fff;
+}
+.containerLinksNav .active{
+    color: rgb(243, 212, 72);
+    background-color: rgba(43, 40, 37, 1);
+}
+.containerLinksNav :hover{
+    color: rgb(243 212 72);
+    background-color: (43 40 37 1);
+}
+
+/*Header*/
+header{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.contenedorHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    margin:10px auto;
+    padding: 20px;
+}
+.textoHeader{
+    /*margin: 50px 0;*/
+    /*padding: 20px 10px;*/
+    width: 450px;
+    height: auto;
+}
+.textoHeader h1{
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #000;
+}
+.textoHeader span{
+    color: orange;
+}
+.textoHeader p{
+    font-size: 1rem;
+    /*margin: 15px 10px;*/
+    padding: 10px 0;
+}
+.fotoHeader{
+    width: 420px;
+    height: 370px;
+    overflow: hidden;
+    border-radius: 5%;
+    /*background-image: url(../ImagenesGridd/buildHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;*/
+}
+.fotoHeader img{
+    height: 100%;
+    width: 100%;
+}
+
+@media(max-width:1010px){
+    .textoHeader{
+        margin: auto;
+        text-align: center;
+    }
+    .fotoHeader{
+        margin: auto;
+    }
+}
+
+
+section{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-image: url(../ImagenesGridd/fondoAbout.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section h3{
+    display: block;
+    padding: 25px 10px;
+    text-align: center;
+    text-shadow: 1px 1px rgb(255, 166, 76);
+    font-size: 1.8rem;
+    color: orange;
+}
+
+.contenedorOpinionesSection{
+    width: 90%;
+    height: auto;
+    margin: 45px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: orange;
+    display: flex;
+}
+.textoOpinion{
+    width: auto;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding: 5px 8px;
+}
+.textoOpinion p{
+    font-size: 1rem;
+    text-align: start;
+}
+ .fotoOpinion{
+    overflow: hidden;
+    width: 270px;
+    height: 100px;
+    margin: 5px;
+    border-radius:50% ;
+    background-color: antiquewhite;
+}
+.fotoOpinion img{
+    height: 100%;
+    width: 100%;
+}
+
+
+@media(max-width:900px){
+    .contenedorOpinionesSection{
+        flex-wrap: wrap;
+    }
+
+    .fotoOpinion{
+        margin: auto;
+        width: 200px;
+        height: 130px;
+    }
+}
+/*Footer*/
+footer{
+    background-color: rgba(43,40,37, 0.836);
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+footer h3{
+    margin: auto;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+
+}

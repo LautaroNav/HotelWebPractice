@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+/*Navegación*/
+.navbar{
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(43,40,37, 0.836);
+}
+
+.navContainer{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.LogoHBT{
+    
+    overflow: hidden;
+    height: 60px;
+    width: 60px;
+}
+.LogoHBT img{
+    width: 100%;
+    height: 100%;
+}
+
+.containerLinksNav{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerLinksNav a{
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 0;
+    color: #fff;
+}
+.containerLinksNav .active{
+    color: rgb(243, 212, 72);
+    background-color: rgba(43, 40, 37, 1);
+}
+
+.containerLinksNav :hover{
+    color: rgb(243 212 72);
+    background-color: (43 40 37 1);
+}
+
+/*BODY PAGE*/
+
+
+ header{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    background-image: url(../ImagenesGridd/HotelRoom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+header .contenedorHeaderTexto{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin: 100px auto;
+    padding: 20px 0;
+    overflow: hidden;
+}
+header h1{
+    font-size: 3rem;
+    color: #fff;
+}
+header p{
+    font-size: 1.3rem;
+    color: #fff;
+}
+header a{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    text-decoration: none;
+    border: 3px solid #fff;
+    padding: 10px;
+    margin: 3px ;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+section{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Wall{
+    width: 50%;
+    height: auto;
+    margin: 0;
+    background-color: blue;
+    background-image: url(../ImagenesGridd/wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.textNextToBuild{
+    margin: 0;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+}
+.textNextToBuild h3{
+    font-size: 1.3rem;
+    color:#fff
+}
+.textNextToBuild span{
+    font-size: inherit;
+    color: rgb(243, 212, 72);
+}
+.textNextToBuild p{
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #fff;
+}
+.textNextToBuild a{
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 15px;
+    border: 3px solid #fff;
+}
+/*Contenido Principal*/
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+main .sección{
+    flex-wrap: wrap;
+    flex-grow: 1;
+    overflow: hidden;
+    background-color: black;
+}
+
+.uno{
+    color: #fff;
+    background-image: url(../ImagenesGridd/café.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dos{
+    color: rgb(243, 212, 72);
+    background-image: url(../ImagenesGridd/greatRoom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center center;
+}
+.tres{
+    color: #fff;
+    background-image: url(../ImagenesGridd/pool.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center center;
+}
+.sección h3{
+    margin: 80px auto;
+    font-size: 1.8rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+@media (max-width:830px){
+    main{
+        flex-wrap: wrap;
+    }
+}
+
+/*Footer*/
+footer{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: 15px 25px;
+    background-color: rgba(43,40,37, 0.836);
+}
+
+footer h3{
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
